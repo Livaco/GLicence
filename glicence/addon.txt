@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"				"GLicence"
+	"version"			"1.0"
+	"up_date"			"16/10/2018"
+	"author_name"		"Livaco"
+	"author_email"		"livacobussness@outlook.com"
+	"author_url"		"http://www.livaco.tk/"
+	"info"				"A basic system for buying Gun Licences."
+	"override"			"0"
+}
