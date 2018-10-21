@@ -40,7 +40,7 @@ net.Receive("glicence_buy", function(len, ply)
 
   end 
 
-  ply:addMoney(ply:getDarkRPVar("money") - GLicence.Config.Cost)
+  ply:addMoney(GLicence.Config.Cost - (GLicence.Config.Cost * 2))
   ply:setDarkRPVar("HasGunlicense", true)
 
   net.Start("glicence_message")
