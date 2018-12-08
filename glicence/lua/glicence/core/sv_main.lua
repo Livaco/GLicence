@@ -38,7 +38,7 @@ net.Receive("glicence_buy", function(len, ply)
 
     end
 
-  end 
+  end
 
   ply:addMoney(GLicence.Config.Cost - (GLicence.Config.Cost * 2))
   ply:setDarkRPVar("HasGunlicense", true)
@@ -56,5 +56,41 @@ net.Receive("glicence_buy", function(len, ply)
     end
 
   end
+
+end)
+
+-- Console Print
+local function conprint(msg)
+
+  MsgC(Color(200, 200, 200), "[")
+  MsgC(Color(255, 150, 150), "GLicence")
+  MsgC(Color(200, 200, 200), "] ")
+  MsgC(Color(200, 200, 200), msg)
+  MsgC(Color(200, 200, 200), "\n")
+
+end
+
+// Version Check
+local RanCheck = false
+
+hook.Add("PlayerConnect", "glicence_checkversion", function()
+
+  if(RanCheck == true) then return end
+
+  conprint("Running version check!")
+
+  // Post request.
+  http.Post("https://livacoweb.000webhostapp.com/libaries/versions/glicence.php", {RunningVar = "1.2"}, function(result)
+
+    conprint(result)
+
+  end, function(fail)
+
+    conprint("Error: " .. fail)
+    conprint("This is most likely due to my website being down. Try again later.")
+
+  end)
+
+  RanCheck = true
 
 end)
