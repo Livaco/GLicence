@@ -1,0 +1,7 @@
+1.3 Changelog:
+- Added protection for buying without sufficent funds. Sorry for the wait, only realised after a support ticket came through about it.
+- Added a few bLogs options.
+- Changed the way the files look. Less spacing, keep consistent with my other recent addons.
+- Moved all core files into the two main files (sv_main and cl_main), instead of all other files. Saves the server loading them all.
+
+Enjoy!
