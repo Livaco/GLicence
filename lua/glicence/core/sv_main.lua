@@ -74,7 +74,7 @@ hook.Add("PlayerConnect", "glicence_checkversion", function()
   if(RanCheck == true) then return end
   GLicence:Print("Running version check!")
   // Post request.
-  http.Post("https://livacoweb.000webhostapp.com/libaries/versions/glicence.php", {RunningVar = "1.2"}, function(result)
+  http.Post("https://livacoweb.000webhostapp.com/libaries/versions/glicence.php", {RunningVar = "1.3"}, function(result)
     GLicence:Print(result)
   end, function(fail)
     GLicence:Print("Error: " .. fail)
