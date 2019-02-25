@@ -1,3 +1,5 @@
+# THIS ADDON IS DEPRECATED. I WILL NOT SUPPORT IT AND UPDATES WILL NOT COME OUT.﻿
+
 # GLicence
 
 GLicence is a simply and lightweight addon that allows users to buy a Gun Licence.
